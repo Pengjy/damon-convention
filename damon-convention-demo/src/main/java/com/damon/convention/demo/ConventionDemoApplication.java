@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class YzConventionDemoApplication {
+public class ConventionDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(YzConventionDemoApplication.class, args);
+        SpringApplication.run(ConventionDemoApplication.class, args);
     }
 
 }
