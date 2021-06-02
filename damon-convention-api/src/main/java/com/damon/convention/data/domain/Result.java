@@ -20,7 +20,7 @@ import lombok.Data;
  * @since 2021-01-08 10:16
  */
 @Data
-public class Result<T extends Serializable> implements Serializable {
+public class Result<T> implements Serializable {
 
     /**
      * 返回编码
