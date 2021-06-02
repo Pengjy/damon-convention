@@ -25,14 +25,14 @@ public class Results {
         //doSomething
     }
 
-    public static  <T extends Serializable>  Result<T> success() {
+    public static  <T>  Result<T> success() {
         Result<T> result = new Result<>();
         result.setCode(CommonCode.SUCCESS.code());
         result.setMessage(CommonCode.SUCCESS.message());
         return result;
     }
 
-    public static <T extends Serializable> Result<T> success(T data) {
+    public static <T> Result<T> success(T data) {
         Result<T> result = new Result<>();
         result.setCode(CommonCode.SUCCESS.code());
         result.setMessage(CommonCode.SUCCESS.message());
@@ -40,14 +40,14 @@ public class Results {
         return result;
     }
 
-    public static <T extends Serializable> Result<T> failure(CommonCode commonCode) {
+    public static <T> Result<T> failure(CommonCode commonCode) {
         Result<T> result = new Result<>();
         result.setCode(commonCode.code());
         result.setMessage(commonCode.message());
         return result;
     }
 
-    public static <T extends Serializable> Result<T> failure(ServiceException serviceException) {
+    public static <T> Result<T> failure(ServiceException serviceException) {
         Result<T> result = new Result<>();
         result.setCode(serviceException.getCode());
         result.setMessage(serviceException.getMessage());
