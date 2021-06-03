@@ -19,7 +19,7 @@ import lombok.Data;
  * @since 2021-01-08 10:20
  */
 @Data
-public class Page<T extends Serializable> implements Serializable {
+public class Page<T> implements Serializable {
 
     /**
      * 第几页
